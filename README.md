@@ -12,7 +12,7 @@ At the beginning, the raven sits several steps away from the orchard.
 The goal is to harvest all fruits before the raven reaches the orchard.
 
 A six-sided die is rolled. If it shows a raven, the raven moves one
-step forward. If it shows a basket, a fruit can be chosen from any tree.
+step forward. If it shows a basket, one fruit can be chosen from any tree.
 If it shows a color, one fruit with this color can be harvested.
 
 
@@ -30,4 +30,4 @@ print(f'Raven won {raven_percentage*100:.2f}% of the games')
 ```
 
 ## Run the tests
-```python - m unittest tests.py```
+```python -m unittest tests.py```

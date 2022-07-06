@@ -27,7 +27,7 @@ class Orchard():
 
     def get_number_of_fruits_left(self) -> int:
         """Return total number of fruits left."""
-        return sum([v for k,v in self.trees.items()])
+        return sum([v for k, v in self.trees.items()])
 
     def roll_die(self) -> str:
         """Return result of die roll."""
@@ -52,12 +52,14 @@ class Orchard():
         """Play game until all fruits are harvested or raven wins.
 
         Args:
-            verbose (bool): if True, some information is printed for every move in the game
+            verbose (bool): if True, some information is printed
+                            for every move in the game
         Returns:
-            bool: True, if raven wins. False otherwise.
+            bool: True if raven wins. False otherwise.
         """
         raven_wins = False
-        while (self.raven_position < 0) and (self.get_number_of_fruits_left() > 0):
+        while (self.raven_position < 0)\
+                and (self.get_number_of_fruits_left() > 0):
             die_result = self.roll_die()
             self.move(die_result)
             if self.raven_position == 0:
